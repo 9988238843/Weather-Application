@@ -2,8 +2,13 @@ import React, { useState } from "react";
 import "./App.css";
 import DisplayWeather from "./DisplayWeather.js";
 
+const d = require('dotenv');
+
+d.config();
+
 function App() {
-  const APIKEY = "972f5bd464b8af03054ba44a08f082f2";
+  console.log(process.env.WEATHER_APP_API_KEY)
+  const APIKEY =process.env.WEATHER_APP_API_KEY;
 
   const [city, setCity] = useState("");
   const [weather, setWeather] = useState([]);
