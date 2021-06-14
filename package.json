@@ -1,5 +1,6 @@
 {
   "name": "myapp",
+  "homepage": "https://9988238843.github.io/Weather-Application",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,13 +8,16 @@
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
     "dotenv": "^8.2.0",
+    "gh-pages": "^1.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-dotenv": "^0.1.3",
-    "react-scripts": "^1.1.5",
+    "react-scripts": "^4.0.3",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -28,7 +32,6 @@
   "browserslist": {
     "production": [
       ">0.2%",
-      "not dead",
       "not op_mini all"
     ],
     "development": [
