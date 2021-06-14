@@ -3,12 +3,10 @@ import "./App.css";
 import DisplayWeather from "./DisplayWeather.js";
 
 const d = require('dotenv');
-
 d.config();
 
 function App() {
-  console.log(process.env.WEATHER_APP_API_KEY)
-  const APIKEY =process.env.WEATHER_APP_API_KEY;
+  const APIKEY =process.env.REACT_APP_API_KEY;
 
   const [city, setCity] = useState("");
   const [weather, setWeather] = useState([]);
